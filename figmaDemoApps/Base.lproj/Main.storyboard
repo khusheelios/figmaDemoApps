@@ -16,10 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ydy-XD-98a">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydy-XD-98a">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="bOv-bR-8mA"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-f7-Ks2">
                                 <rect key="frame" x="47" y="302" width="115" height="109"/>
@@ -34,7 +36,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ydy-XD-98a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HNv-Z3-zgv"/>
+                            <constraint firstItem="Ydy-XD-98a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L3H-Xk-V7c"/>
+                            <constraint firstItem="Ydy-XD-98a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="klM-MW-qZr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstbackView" destination="Ye1-f7-Ks2" id="2AN-Ly-AZb"/>
+                        <outlet property="headerView" destination="Ydy-XD-98a" id="bgz-FG-FAx"/>
+                        <outlet property="secondView" destination="6Zb-v1-PPE" id="Y2a-O8-5gd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
